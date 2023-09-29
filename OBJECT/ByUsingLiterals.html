@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--! 1.BY USING LITERALS -->
+    <!--todo : We can create the Object using the Key Value Pair  -->
+    <!--* After Object Creation we need to store the Address in the Object Refernce Variable  -->
+    <!--* For Accessing that Value we need to Store the Address in the Varibale through that we Acces that valu.  -->
+    <!--? Syntax :  -->
+    <!--?     {                               -->
+    <!--?           Properties                 -->
+    <!--?                                      -->
+    <!--?         Key1 : Valur1,              -->
+    <!--?         Key2 : Valur2               -->
+    <!--?                                     -->
+    <!--?      }                              -->
+
+    <script>
+
+        let obj = {
+                key1 : "Value1",
+                Key2 : "Value2"
+        }
+
+        console.log(typeof obj);    
+        console.log(obj);
+        console.log(obj.key1);
+        console.log(obj.Key2="Updated Value");
+        console.log(obj.Key2);
+
+    </script>
+
+    <script>
+        let mobile ={
+                company : "Samsung",
+                model : "4s",
+                price : 8000,
+                make : "Germany"
+        }
+        console.log(mobile);
+        console.log(mobile.company);
+        mobile.price=10000;
+        console.log(mobile.price);
+
+    </script>
+
+    <script>
+      let human ={
+            name : "Chagan",
+            age : 34,
+            contact : 8888888888,
+            status : true,
+            wifeDeatails : {name : "Ranu", age :32 ,id:123}
+        }
+
+        console.log(human);
+        console.log(human.wifeDeatails.name);
+        human.wifeDeatails.name = "Katrina";
+        console.log(human.wifeDeatails);
+        delete human.wifeDeatails
+        console.log(human);
+    </script>
+
+    <script>
+        let obj1 = {
+            string : "Hello Guys!!!",
+            number : 123,
+            boolean : true,
+            object : { name : "Object"},
+            function : () =>{
+                console.log("Hello This is Function");
+            },
+            n1:null,
+        }
+        console.log(obj1);
+        obj1.newKey ="newValue"
+
+    </script>
+
+</body>
+</html>

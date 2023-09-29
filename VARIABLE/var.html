@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--! var  -->
+    <!--* Declaration : Decalaration is Possible  -->
+    <!--* Declaration with Initialization : It is possible with var variable  -->
+    <!--* Re-Decalration : Re-Declaration is pPossible in var variable -->
+    <!--* Re-Initialization : Re-Initaialization is Possible in var variable -->
+    <!--* Scope : Global  -->
+    <!--* Hoisting : Hoisting is possible  -->
+    
+     <!--* 1.Declaration : Decalaration is possible  -->
+     <script>
+        //1.Decalration
+        console.log("Start")
+        var declare;
+        console.log(declare);
+
+        declare = " initialization"
+        console.log(declare);
+
+        var a=20;
+        console.log(a)
+
+    </script>
+
+    <!--* 2.Declaration With Initilization  -->
+    <script>
+        //2.Declaration with Initiliaztion 
+        let b=20;
+        console.log(b);
+    </script>
+
+    <!--* 3.Re-Decalration : Re-Declaration is possible in var variable -->
+    <script>
+        // 3.Re-Declaration
+
+        var redeclare="Re-Declaration"
+        var redeclare="Hello"
+        console.log(redeclare);
+
+        // Re-Declaration iS Not Possible in let variable
+
+    </script>
+
+    <!--* 4.Re-Initaialization is possible in var variable -->
+    <script>
+        //4.Re-Initailizaiton
+        var c=20;
+        console.log(c);
+        c="Hello"
+        console.log(c);
+    </script>
+
+    <!--* 5.Scope : Global Scope  -->
+    <script>
+        function demo(params) {
+            var fun="function var"
+        }
+        console.log(fun);
+        demo();
+    </script>
+
+    <!--* 6.Hoisting : Hoisting is possible with the var variable  -->
+    <script>
+        //! Hoisting is possible in var variable
+        hoist="Hoisting";
+        var hoist;
+        console.log(hoist);
+        console.log(typeof hoist);
+
+    </script>
+
+  
+
+</body>
+</html>

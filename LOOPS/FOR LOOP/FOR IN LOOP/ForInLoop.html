@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--! 2.for in Loop  -->
+    <!--todo : for in loop is used for Object   -->
+    <!--* Beacuse the for in means inside the Object  -->
+    <script>
+        let name = window.prompt("Enter Your Name");
+        let age = window.prompt("Enter your age");
+        let citizen = window.confirm("Do You Have Indian Citizenship")
+
+        if(age>=18 && citizen==true)
+        {
+            let voter ={VoterName:name,VoterAge:age,CitiZenShip:citizen}
+            console.log(voter);
+
+            for(const x in voter)
+            {
+                console.log(voter[x]);
+                // document.write(voter[x]+"<br>");
+                document.write(`${x}: ${voter[x] }<br>`);
+            }
+        }
+        else
+        {
+            alert("Go to Home Watch Pogo");
+        }
+    </script>
+</body>
+</html>

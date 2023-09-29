@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--! let  -->
+    <!--* Declarartion : Decalaration is Possible  -->
+    <!--* Declaration with Initialization : It is possible with let variable  -->
+    <!--! Re-Decalration : Re-Declaration is Not Possible in let variable -->
+    <!--* Re-Initialization : Re-Initaialization is Possible in let variable -->
+    <!--* Scope : Block Scope  -->
+    <!--! Hoisting : Hoisting is Not Possible  -->
+
+    <!--* 1.Declaration : Decalaration is Possible  -->
+    <script>
+        //1.Decalration
+        console.log("Start")
+        let declare;
+        console.log(declare);
+
+        declare = " initialization"
+        console.log(declare);
+
+        let a=20;
+        console.log(a)
+    </script>
+    <!--* 2.Declaration With Initilization  -->
+    <script>
+        //2.Declaration with Initiliaztion 
+        let b=20;
+        console.log(b);
+    </script>
+
+    <!--! 3. Re-Decalration : Re-Declaration is Not possible in let variable -->
+    <script>
+        // 3.Re-Declaration
+
+        let redeclare="Re-Declaration"
+        let redeclare="Hello"
+        console.log(redeclare);
+
+        // Re-Declaration iS Not Possible in let variable
+
+    </script>
+
+    <!--* 4.Re-Initaialization is possible in let variable -->
+    <script>
+        //4.Re-Initailizaiton
+        let c=20;
+        console.log(c);
+        c="Hello"
+        console.log(c);
+    </script>
+    
+    <!--* 5.Block Scope : The variable which cannot be accessible out side the block is called as Block Scope.  -->
+    <script>
+        //5.Block Scope
+        //The variable which cannot be accessible out side the block is called as Block Scope.
+        if(true)
+        {
+            let block="Block Scope"
+        }
+        console.log(block);
+    </script>
+
+    <!--! 6.Hoisting : Hoisting is Not Possible is let Variable  -->
+    <script>
+        hoist="Hoisting";
+        let hoist;
+        console.log(hoist);
+        console.log(typeof hoist);
+    </script>
+
+</body>
+</html>

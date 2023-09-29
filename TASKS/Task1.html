@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Parent(){
+
+                let person1=true;
+                let person2=true;
+                let person3=false;
+                let person4=true;
+                let person5=false;
+
+            return ()=>{
+                    console.log(person1 ? "Person1 Is Registered":"Person1 Is Not Registered");
+                    console.log(person2 ? "Person2 Is Registered":"Person2 Is Not Registered");
+                    console.log(person3 ? "Person3 Is Registered":"Person3 Is Not Registered");
+                    console.log(person4 ? "Person4 Is Registered":"Person4 Is Not Registered");
+                    console.log(person5 ? "Person5 Is Registered":"Person5 Is Not Registered");
+
+                return () =>{
+                    let Question = 0;
+                    let person=0;
+                    while (Question!=4) {
+                        console.log("Question No"+Question+" For The Person"+person);
+                        Question++;
+                        person++;
+
+                    }
+                }
+
+            }
+        }
+        Parent()()();
+    </script>
+</body>
+</html>

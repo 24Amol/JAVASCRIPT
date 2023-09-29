@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--! 1.ARRAY BY USING LITERALS  -->
+    <script>
+        let array =[10,20,30,40,50];
+        console.log(typeof array);
+        console.log(array[0]);
+        console.log(array[1]);
+        console.log(array[2]);
+        console.log(array[3]);
+        console.log(array[4]);
+    </script>
+     <!--todo : We can also initialize the after Indexed in the Array & those array index we have not defined it will consider as Empty Element  -->
+     <script>
+        let arr = [10,true,null,'apple']
+        console.log(arr);
+        arr[7]="Amol"
+        console.log(arr);
+        console.log(arr[9]);
+        arr[9]="Apple"//Here we can directly define the array index after index value 
+        console.log(arr[9]);
+        console.log(arr.length);
+    </script>
+    <!--todo : Here delete the Array Index Value Using the Delete Keyword -->
+    <script>
+        let arrRef = [10,20,30,{name:"AMol",age:24,proff:"Software Engineer"},50]
+        arrRef[8]={name:"mango"}
+        console.log(arrRef);
+
+        delete arrRef[3]
+
+
+    </script>
+</body>
+</html>
